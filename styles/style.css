@@ -56,6 +56,11 @@ header {
   margin-top: -20px;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+}
+
 nav {
   margin: auto;
   margin-top: 20px;
@@ -102,12 +107,15 @@ h1 {
 }
 
 .pancake-img {
-  /* width: 300px; */
   margin-top: 25px;
 }
 
 .about {
   font-size: 1.2em;
+}
+
+.about > p {
+  line-height: 22px;
 }
 
 .coffee-drinker-img {
@@ -120,6 +128,10 @@ h2 {
 
 .hours {
   font-size: 1.2em;
+}
+
+.hours > p {
+  line-height: 28px;
 }
 
 .location {
@@ -138,11 +150,26 @@ footer {
   align-items: center;
 }
 
+.about, .hours {
+  margin: auto;
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 
 /* MOBILE STYLES */
 @media only screen and (max-width: 480px) {
   nav {
     width: 320px;
+  }
+
+  h1 {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   img {
@@ -151,12 +178,40 @@ footer {
 
   .about, .hours {
     width: 300px;
-    margin: auto;
-    border: 1px solid black;
-    padding: 10px;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  }
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  nav {
+    width: 481px;
+  }
+
+  img {
+    width: 481px;
+  }
+
+  .about, .hours {
+    width: 481px;
+  }
+}
+
+/* DESKTOP STYLES */
+@media only screen and (min-width: 769px) {
+  .content {
+    min-width: 60%;
+    max-width: 840px;
+  }
+
+  nav {
+    width: 481px;
+  }
+
+  img {
+    width: 481px;
+  }
+
+  .about, .hours {
+    width: 481px;
   }
 }
