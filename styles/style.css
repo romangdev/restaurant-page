@@ -69,7 +69,7 @@ nav > ul {
   justify-content: space-around;
 }
 
-li {
+a {
   background-color: yellow;
   width: 100px;
   text-align: center;
@@ -81,6 +81,10 @@ li {
   border-bottom: none;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;;
+}
+
+a:hover {
+  background-color: lightyellow;
 }
 
 .content {
@@ -127,6 +131,11 @@ h2 {
 
 footer {
   background-color: orange;
+  width: 100%;
+  height: 40px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
 }
 
 
