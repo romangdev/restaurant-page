@@ -51,16 +51,22 @@ table {
 
 
 /* MAIN STYLES */
+header {
+  background-color: blue;
+  margin-top: -20px;
+}
+
 nav {
   margin: auto;
   margin-top: 20px;
   font-size: 1.4em;
+  padding-top: 10px;
 }
 
 nav > ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 li {
@@ -77,10 +83,71 @@ li {
   border-top-right-radius: 10px;;
 }
 
+.content {
+  background-color: yellow;
+  border: 1px solid black;
+  margin: 30px 0;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 3.0em;
+}
+
+.pancake-img {
+  /* width: 300px; */
+  margin-top: 25px;
+}
+
+.about {
+  font-size: 1.2em;
+}
+
+.coffee-drinker-img {
+  margin-top: 30px;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+.hours {
+  font-size: 1.2em;
+}
+
+.location {
+  margin: auto;
+  margin-top: 30px;
+  font-size: 1.4em;
+  width: 320px;
+}
+
+footer {
+  background-color: orange;
+}
+
 
 /* MOBILE STYLES */
 @media only screen and (max-width: 480px) {
   nav {
     width: 320px;
+  }
+
+  img {
+    width: 320px;
+  }
+
+  .about, .hours {
+    width: 300px;
+    margin: auto;
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }
