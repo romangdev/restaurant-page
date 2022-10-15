@@ -107,6 +107,10 @@ a:hover {
   border-right: 1px solid rgba(225, 225, 225, 0.2);
 }
 
+.selected-tab {
+  background-color: lightyellow;
+}
+
 h1 {
   text-align: center;
   margin-top: 40px;
