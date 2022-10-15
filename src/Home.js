@@ -1,6 +1,14 @@
 export default class Home {
+  removeAllChildNodes = (content) => {
+    while (content.firstChild) {
+      content.removeChild(content.firstChild);
+    }
+  }
+
   renderHomePage = () => {
     const content = document.querySelector('.content');
+    content.classList.remove('menu-content');
+    this.removeAllChildNodes(content);
 
     const header = document.createElement('h1');
     header.innerText = 'Silver Specialty Cafe';

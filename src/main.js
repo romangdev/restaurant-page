@@ -9,7 +9,8 @@ const home = new Home;
 const menu = new Menu;
 
 hometab.classList.add('selected-tab');
-home.renderHomePage();
+menu.renderMenuPage();
+// home.renderHomePage();
 
 site.addEventListener('click', (e) => {
   if (e.target.className === 'home-tab') {

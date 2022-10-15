@@ -107,6 +107,10 @@ a:hover {
   border-right: 1px solid rgba(225, 225, 225, 0.2);
 }
 
+.menu-content div {
+  border: 1px solid black;
+}
+
 .selected-tab {
   background-color: lightyellow;
 }
