@@ -1,5 +1,6 @@
 import Home from './Home.js';
 import Menu from './Menu.js';
+import Contact from './Contact.js'
 
 const site = document.querySelector('body');
 const hometab = document.querySelector('.home-tab');
@@ -7,6 +8,7 @@ const menutab = document.querySelector('.menu-tab');
 const contacttab = document.querySelector('.contact-tab');
 const home = new Home;
 const menu = new Menu;
+const contact = new Contact;
 
 hometab.classList.add('selected-tab');
 menu.renderMenuPage();
@@ -27,5 +29,6 @@ site.addEventListener('click', (e) => {
     hometab.classList.remove('selected-tab');
     menutab.classList.remove('selected-tab');
     contacttab.classList.add('selected-tab');
+    contact.renderContactPage();
   }
 });
