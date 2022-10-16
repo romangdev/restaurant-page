@@ -45,20 +45,20 @@ export default class Menu {
     content.appendChild(header);
 
     content.appendChild(drinks);
-    drinks.appendChild(coffeeDiv);
+    content.appendChild(coffeeDiv);
     coffeeDiv.appendChild(coffeeHeader);
     coffeeDiv.appendChild(coffeeDesc);
 
     content.appendChild(mainDishes);
-    mainDishes.appendChild(pancakesDiv);
+    content.appendChild(pancakesDiv);
     pancakesDiv.appendChild(pancakesHeader);
     pancakesDiv.appendChild(pancakesDesc);
-    mainDishes.appendChild(eggsBenedictDiv);
+    content.appendChild(eggsBenedictDiv);
     eggsBenedictDiv.appendChild(eggsBenedictHeader);
     eggsBenedictDiv.appendChild(eggsBenedictDesc);
 
     content.appendChild(sides);
-    sides.appendChild(hashbrownDiv);
+    content.appendChild(hashbrownDiv);
     hashbrownDiv.appendChild(hashbrownHeader);
     hashbrownDiv.appendChild(hashbrownDesc);
   }
