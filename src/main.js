@@ -11,8 +11,7 @@ const menu = new Menu;
 const contact = new Contact;
 
 hometab.classList.add('selected-tab');
-menu.renderMenuPage();
-// home.renderHomePage();
+home.renderHomePage();
 
 site.addEventListener('click', (e) => {
   if (e.target.className === 'home-tab') {
